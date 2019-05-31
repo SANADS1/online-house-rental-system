@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+  </script>
+<head>
+  <title>Online house rental system</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <style>
+       h1{
+          color: brown;
+          font-size: 35px;
+       }
+   </style>
+ </head>
+<body>
+    <div class="container">
+        <h1>DECADEV HOUSE LISTINGS</h1>
+        <form action="", method='POST'>
+          <div class="form-group">
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="description" class="form-control" id="description" placeholder="describe your house" name="description">
+          </div>
+          <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="location" class="form-control" id="location" placeholder="Locate at where" name="location">
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="address" class="form-control" id="address" placeholder="Enter your address" name="address">
+          </div>
+          <div class="form-group">
+            <label for="contacts">Contacts:</label>
+            <input type="contacts" class="form-control" id="contacts" placeholder="Enter your phone contact" name="description">
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Remember Me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+     <script src="../Public/script/post.js"></script>  
+  
+</body>
+</html>
+<!--<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-itunes-app" content="app-id=1454644337">
+<meta name="google-play-app" content="app-id=ng.com.propertypro.user">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="" />
+<title>Register</title>
+<script type="a6538d085f56ba34381dcf04-text/javascript">document.documentElement.className = 'js';</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="icon" type="image/ico" href="/assets/image/42484569b600758112d45bad3d876f78-favicon.ico" />
+<link rel="stylesheet" href="/assets/app/css/bae56c054f535e3c2416f731f6be5285-layout.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+<style type="text/css">
+            #ajaxWait {
+                display: none;
+                width: 100%;
+                position: fixed;
+                top: 100px;
+                z-index: 1000000;
+
+            }
+            #ajaxWait .progress {
+                width: 400px;
+                margin: 0 auto;
+            }
+
+            .request_form .form-control {
+                border: 1px solid #ced4da !important;
+
+            }
+        </style>
+<script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://www.propertypro.ng",
+          "name" : "PropertyPro.ng",
+          "sameAs" : [
+            "https://www.facebook.com/propertyprong",
+            "https://www.twitter.com/propertyprong",
+            "https://plus.google.com/+propertyprong",
+            "https://instagram.com/propertyprong"
+          ],
+          "potentialAction": [{
+            "@type": "SearchAction",
+            "target": "https://www.propertypro.ng/property-for-sale?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },{
+            "@type": "SearchAction",
+            "target": "https://www.propertypro.ng/property-for-rent?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }]
+        }
+        </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109674489-1" type="a6538d085f56ba34381dcf04-text/javascript"></script>
+<script type="a6538d085f56ba34381dcf04-text/javascript">
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-109674489-1');
+        </script>
+<link rel="manifest" href="/manifest.json">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async type="a6538d085f56ba34381dcf04-text/javascript"></script>
+<script type="a6538d085f56ba34381dcf04-text/javascript">
+                var OneSignal = window.OneSignal || [];
+                OneSignal.push(["init", {
+                    appId: "09852cd5-2afa-47c7-bc28-6ee2e7fcb5d4",
+                    autoRegister: true,
+                    notifyButton: {
+                        enable: false /* Set to false to hide */
+                    },
+                    safari_web_id: 'web.onesignal.auto.040fbea3-5bf4-4f81-a6ad-042d48246d00'
+                }]);
+        </script>
+<style>
+@media only screen and (max-width: 600px) {
+   #offerModal .modal-dialog {
+   width: 250px;
+   margin: 40px auto;
+  }
+}
+
+.simg {
+ width: 250px !important;
+display: block;
+margin: 0 auto
+}
+
+.localty-cont .row1 a {
+     display: block;
+    margin: 0 auto;
+}
+
+#home-popup .modal-dialog {
+margin-top: 100px;
+}
+#home-popup .modal-content {
+background-color: transparent !important;
+}
+#home-popup .modal-body {
+margin: 0; padding: 0;
+}
+#home-popup button {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 1px 6px;
+    display: block;
+    margin-bottom: -10px;
+    margin-right: -15px;
+}
+#home-popup img  {
+width: 500px;
+cursor: pointer;
+}
+
+.result-listing .text-center, .afrecaprop img {
+width: 100% !important;
+}
+
+</style>
+<script type="a6538d085f56ba34381dcf04-text/javascript">
+$(document).ready(function() {
+   // $('#landModal').modal('show')
+});
+</script>
+
+<script type="a6538d085f56ba34381dcf04-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KC8QTTS');</script>
+
+
+<script type="a6538d085f56ba34381dcf04-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NW3NX7N');</script>
+
+<style type="text/css">
+        .gain h4, .gain li {
+            color: #fff !important;
+        }
+    </style>
+<script type="a6538d085f56ba34381dcf04-text/javascript">
+                window.intercomSettings = {
+                    app_id: "pib60w6j"
+                };
+        </script>
+<script type="a6538d085f56ba34381dcf04-text/javascript">(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/pib60w6j';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC8QTTS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3NX7N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="ajaxWait">
+<div class="progress">
+<div id="progressBar" class="progress-bar progress-bar-striped progress-bar-danger active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+Please Wait....
+</div>
+</div>
+</div>
+<header class="primary ">
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="container">
+<a class="navbar-brand" href="/">
+<img src="/assets/app2/img/177e94744350d21db8ec80903eab9606-propertypro.png" alt="logo" />
+</a>
+<a class="nav-link mobile_app outer-mobile-app d-md-none d-lg-none d-xl-none" href="https://play.google.com/store/apps/details?id=ng.com.propertypro.user&hl=en"><img src="/assets/app/images/c54df996d08ff7370c4ff05378c64458-mobile-app.svg" alt="" /></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+<ul class="navbar-nav">
+ <li class="nav-item"><a class="nav-link" href="/property-for-sale">For Sale <span class="sr-only">(current)</span> </a></li>
+<li class="nav-item"><a class="nav-link" href="/property-for-rent">For Rent</a></li>
+<li class="nav-item "><a class="nav-link" href="/shortlet">Short Let</a></li>
+<li class="nav-item"><a class="nav-link" href="https://www.propertypro.ng/blog">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="/agents">Agents</a></li>
+<li class="nav-item"><a href="/property-post" class="btn default">Post A Property <small>FREE</small></a></li>
+<li class="nav-item"><a href="/login" class="btn login">Login</a></li>
+<li class="nav-item"><a class="nav-link signup" href="/register">Sign Up</a></li>
+<li class="nav-item"><a class="nav-link mobile_app d-lg-none d-xl-none" href="https://play.google.com/store/apps/details?id=ng.com.propertypro.user&hl=en"><img src="/assets/app/images/c54df996d08ff7370c4ff05378c64458-mobile-app.svg" alt="" /></a></li>
+<li class="nav-item">
+<button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<div class="drop-downcont">
+<ul>
+<li><a href="/sitemap.html">Site Map</a></li>
+<li><a href="https://www.propertypro.ng/guide">Guide</a></li>
+<li><a href="http://www.moveme.com.ng">Moveme</a></li>
+<li class="hr"></li>
+<li><a href="https://www.facebook.com/propertyprong/">Facebook</a></li>
+<li><a href="https://twitter.com/propertyprong">Twitter</a></li>
+<li><a href="https://www.instagram.com/propertyprong/">Instagram</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<section class="login-bg">
+<div class="container">
+<div class="row">
+<div class="col-xl-6 col-lg-7 col-md-12 text-lg-left text-md-center offset-xl-1 offset-xl-0 content">
+<h1 class="title">Register to start posting</h1>
+<p>
+PropertyPro.ng is the leading real estate property center platform in Nigeria. with a web-based platform for property retails and sales.
+We provide user with the best property search experience both online and offline by connecting them with legitimate and verified real estate agents.
+</p>
+<div class="gain">
+<h4>What I gain by joining PropertyPro.ng</h4>
+<ol>
+<li>Post as many properties as you can</li>
+<li>Gain access to phone numbers of unlimited number of clients</li>
+<li>Never forget an inspection with the inspection reminder</li>
+<li>Gain access to real estate agents all over Nigeria</li>
+<li>Market directly to clients through multiple online channels</li>
+<li>Market your properties on real estate gazzettes and publications.</li>
+</ol>
+</div>
+</div>
+<div class="col-xl-4 col-lg-5 col-md-12">
+<div class="login_container">
+<div class="col-12">
+<div class="header">
+ <h5 class="title">Register</h5>
+
+<hr />
+</div>
+</div>
+<form class="col-lg-12" method="post" action="/register">
+<input type="hidden" name="lastUrl" value="">
+<div class="form-group  clearfix">
+<label class="control-label">Full name</label>
+<input type="text" name="name" value="" class="form-control" placeholder="Full name" required="required">
+</div>
+<div class="form-group  clearfix">
+<label class="control-label">Email address</label>
+<input type="email" name="email" value="" class="form-control" placeholder="Email address" required="required">
+</div>
+<div class="form-group  clearfix">
+<label class="control-label">Password</label>
+<input type="password" name="password" class="form-control" placeholder="Password">
+</div>
+<div class="form-group  clearfix">
+<label class="control-label">Confirm Password</label>
+<input type="password" name="confirmPass" class="form-control" placeholder="Confirm Password" required="required">
+</div>
+<div class="form-group  clearfix">
+<label class="control-label">Phone number</label>
+<input type="text" name="phone" value="" class="form-control" placeholder="Phone number" required="required">
+</div>
+<div class="form-group ">
+You are a <br>
+<label>
+<input type="radio" name="type" value="USER" checked>
+<small class="rad">User</small>
+</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>
+<input type="radio" name="type" value="AGENT">
+<small class="rad">Agent</small>
+</label>
+<label>
+<input type="radio" name="type" value="BUILDER">
+<small class="rad">Builder</small>
+</label>
+<label>
+<input type="radio" name="type" value="OWNER">
+<small class="rad">Owner</small>
+</label>
+<span class="help-block"></span>
+</div>
+<div class="row footer">
+<div class="col-lg-7">
+By clicking Create Account you confirm that you agree to our website
+</div>
+<div class="col-lg-5 text-right">
+<a href="/terms" target="_blank">Terms of use</a>
+</div>
+</div>
+<button class="btn btn-block primary">Create Account</button>
+<p class="text-center">Already registered? <a href="/login">sign in</a></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-12 col-sm-12">
+<ul class="lnks text-lg-left text-md-center text-sm-center">
+<li><a href="http://tpg.ng">ToLet Property Group</a></li>
+<li><a href="https://www.propertypro.ng/blog">Blog</a></li>
+<li><a href="/about">About Us</a></li>
+<li><a href="/contact">Contact Us</a></li>
+<li><a href="/terms">Terms and Conditions</a></li>
+<li><a href="/agents">Agents</a></li>
+<li><a href="/sitemap.html">SiteMap</a></li>
+<li><a href="/advertise-with-us">Advertise With Us</a></li>
+<li><a href="#partners-modal" data-toggle="modal" data-target="#partners-modal">Partners</a></li>
+</ul>
+</div>
+<div class="col-lg-1 offset-lg-5 col-md-12 offset-md-0 col-sm-12 text-right footer-logo">
+<div class="loader">
+<div class="flipper">
+<div class="front">
+<a href="/" class="spining-logo"><img src="/assets/app/images/2d59d3559159cdf645dab87db0a55c91-footer-logo.svg" alt="" class="img-responsive"></a>
+</div>
+<div class="back">
+<a href="/" class="spining-logo"><img src="/assets/app/images/2d59d3559159cdf645dab87db0a55c91-footer-logo.svg" alt="" class="img-responsive"></a>
+</div>
+</div>
+</div>
+
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 main">
+<span class="copy">© copyright 2018 PropertyPro.ng all rights reserved</span>
+<ul class="float-right socials">
+<li><a href="https://www.facebook.com/propertyprong/" class="fa fa-facebook"></a></li>
+<li><a href="https://twitter.com/propertyprong" class="fa fa-twitter"></a></li>
+<li><a href="https://www.instagram.com/propertyprong/" class="fa fa-instagram"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<div class="modal fade" id="partners-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h3 class="modal-title title" id="exampleModalLongTitle">Our Partners</h3>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+ <div class="row">
+<ul class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<li><h5 class="title">Property Classifieds</h5></li>
+<li><a rel="external" href="http://www.imyanmarhouse.com">Real Estate Yangon</a></li>
+<li><a rel="external" href="https://www.lankapropertyweb.com/">Lanka Property Web</a></li>
+<li><a rel="external" href="https://meqasa.com/apartments-for-rent-in-Accra">Apartments for Rent in Ghana</a></li>
+<li><a rel="external" href="https://kupatana.com/buy-and-sell-houses-apartments-for-sale-tanzania">Houses for Sale in Tanzania</a></li>
+<li><a rel="external" href="https://propzy.vn">Propzy.vn</a></li>
+<li><a rel="external" href="https://www.hoppler.com.ph/condominiums-for-sale/manila">Condos for Sale in Manila</a></li>
+<li><a rel="external" href="https://www.angocasa.com/">Casa para Arrendar Angola</a></li>
+</ul>
+<ul class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<li><h5 class="title">Cars Classifieds</h5></li>
+<li><a rel="external" href="https://www.carsdb.com/en/used/">Cars for Sale Myanmar</a></li>
+<li><a rel="external" href="http://www.moteur.ma">Moteur.ma</a></li>
+<li><a rel="external" href="http://moteur.ma/fr/voiture/achat-voiture-occasion">Voiture Occasion Maroc</a></li>
+<li><a rel="external" href="http://www.angolacarro.com">Carros Angola</a></li>
+<li><a rel="external" href="http://www.pakwheels.com">Pakwheels.com</a></li>
+<li><a rel="external" href="https://www.autodeal.com.ph">Autodeal.com.ph</a></li>
+</ul>
+<ul class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<li><h5 class="title">General Classifieds</h5></li>
+<li><a rel="external" href="http://encuentra24.com/">Encuentra24.com</a></li>
+<li><a rel="external" href="http://www.kupatana.com">Kupatana.com</a></li>
+<li><a rel="external" href="http://www.kara.com.ng/">Cheap Home Appliances</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/assets/app/js/2b9eb05166a53d1738d8dee462b972cb-plugins.js" type="a6538d085f56ba34381dcf04-text/javascript"></script>
+<script type="a6538d085f56ba34381dcf04-text/javascript">
+            jQuery(document).ready(function() {
+                
+            });
+    </script>
+<script type="a6538d085f56ba34381dcf04-text/javascript">
+            $(document).ready(function() {
+
+                $.get('/areas.json', function(data){
+                    $( ".searchInput" ).autocomplete({
+                        //minLength:2,
+                        //delay:1000,
+                        source: data,
+                        //autoFocus: true,
+                        //focus: function (event, ui) {
+                        //$(this).val(ui.item.value);
+                        //}
+                        select: function (event, ui) {
+                            $("#auto").val(ui.item.value);
+                        }
+                        //,focus: function( event, ui ) { event.preventDefault(); }
+                    });
+                    //$(".searchInput").typeahead({ source:data, items:4, autoSelect:false });
+                },'json');
+
+                $(".alert2-btn").click(function(){
+                    var valid = true;
+                    var form = $(this).parents("form");
+                    form.find("input").each(function(){
+                        if($(this).val().length === 0 && $(this).attr("required") === "required") {
+                            $(this).addClass('error');
+                            valid = false;
+                        } else {
+                            $(this).removeClass('error');
+                        }
+                    });
+                    if(!valid) {
+                        alert("Please enter your name and email address");
+                        return;
+                    }
+                    $("#ajaxWait").show();
+                    $.ajax({
+                        type: 'POST',
+                        url: form.attr("action"),
+                        data: form.serialize(),
+                        success: function(data) {
+                            if(data==="success") {
+                                alert("You have successfully subscribed");
+                            } else if(data==="already") {
+                                alert("You have already subscribed to this search");
+                            } else {
+                                alert(data);
+                            }
+                            $("#ajaxWait").hide();
+                            $('#alert-panel').slideUp();
+                        }
+                    });
+                    return false;
+                });
+
+                $("#nav-expo img").click(function(e) {
+                    window.open('https://www.propertypro.ng/homefest/?utm_source=website&utm_medium=banner&utm_campaign=expo_banner', '_blank', 'toolbar=yes, location=yes, status=yes, menubar=yes, scrollbars=yes');
+                });
+
+                $("#nav-expo .expo-img span").click(function(e) {
+                    $.get( "/hideExpoStrip", function(data) {
+                    });
+                    $("#nav-expo").slideUp('slow');
+                });
+
+                
+            });
+
+            function init() {
+                var imgDefer = document.getElementsByTagName('img');
+                for (var i = 0; i < imgDefer.length; i++) {
+                    if (imgDefer[i].getAttribute('data-src')) {
+                        imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+                    }
+                }
+            }
+
+            window.onload = init;
+
+            function  areaSpecialistPhone(name, phone) {
+                Show(name + "'s phone number", "<a style='font-size: 30px; color: gray' href='tel:"+phone+"'>"+phone+"</a>");
+            }
+        </script>
+<script type="a6538d085f56ba34381dcf04-text/javascript">
+/*
+        $(function() {
+           $("#home-popup img").attr("src","https://s3-us-west-2.amazonaws.com/toletstatic/mouka-pop.jpg");      
+
+            if($('#home-popup').length > 0) {
+                $('#home-popup').modal('show');
+            }
+
+            $("#home-popup img").click(function(e) {
+                window.open('http://bit.ly/2UOS2u1', '_blank', 'toolbar=yes, location=yes, status=yes, menubar=yes, scrollbars=yes');
+            });
+        });
+*/
+    </script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="a6538d085f56ba34381dcf04-|49" defer=""></script></body>
+</html>
+-->
